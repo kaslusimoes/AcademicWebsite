@@ -59,7 +59,8 @@ a {
     color:black;
     font-family: Verdana, sans-serif;
 }
-a:hover {  color: #ff0000; font-weight: bold;  }
+.left  a:hover {  color: #ff0000; }
+.right a:hover {  color: #ff0000; font-weight: bold;  }
 
 .language {
 	color: blue;
