@@ -3,7 +3,7 @@
 	margin: 0 auto;
 	text-align: center;
 
-    width: 700px;
+  width: 700px;
 	height: 50px;
 	top: -25px;
 	position: relative;
@@ -23,6 +23,8 @@
     font-family: Ubuntu, Verdana;
 }
 
+/* Setting other id's: footer, left and right */
+/* ID's are unique, classes are not unique */
 #footer {
 	position: absolute;
 	bottom: 10px;
@@ -31,7 +33,7 @@
 	font-size: 12px;
 }
 
-.left {
+#left {
 	position: relative;
 	float: left;
 	width: 68%;
@@ -39,19 +41,25 @@
 	margin-left: 20px;
 }
 
-.right {
+/* There should be a space between elements of lists inside the left div */
+#left li {
+    margin: 10px 0;
+}
+#left  a:hover {  color: #ff0000; }
+
+#right {
 	position: relative;
 	float: right;
 	width: 25%;
 	margin-top: 40px;
-    line-height: 5px;
+  line-height: 5px;
 }
+#right a:hover {  color: #ff0000; font-weight: bold;  }
 
+/* Some properties common to all the same tags */
 h3 { margin-bottom: 30px; }
 
 div { border-radius: 10px; }
-/* Testing purposes only: */
-/* div { border: 1px dashed black; } */
 
 /* Common hyperlink properties */
 a {
@@ -59,14 +67,18 @@ a {
     color:black;
     font-family: Verdana, sans-serif;
 }
-.left  a:hover {  color: #ff0000; }
-.right a:hover {  color: #ff0000; font-weight: bold;  }
 
+/* Setting Classes: language, softmark, heavymark
+/* The language tag should differentiate from other texts */
 .language {
 	color: blue;
 	font-size: 14px;
 	font-style: italic;
 }
+/* Does this work?
 .language:hover { font-weight: lighter; }
+*/
 
-/* li:hover {  color: #7d5486  } */
+/* Some coloring style to use with span tags throughout the website */
+.softmark  { color: #76a36e; }
+.heavymark { color: #9b6ea3; font-weight: bold; }
